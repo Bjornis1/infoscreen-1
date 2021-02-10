@@ -1,6 +1,7 @@
 import DadJokes from "./DadJokes";
 import Bikes from "./Bikes";
 import Clock from "./Clock";
+import Weather from "./Weather";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Clock />
       <DadJokes />
       <Bikes />
+      <Weather />
     </div>
   );
 }

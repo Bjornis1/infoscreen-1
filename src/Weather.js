@@ -16,10 +16,6 @@ function Weather() {
     getWeather();
   }, []);
 
-  useEffect(() => {
-    console.log(weather);
-  }, [weather]);
-
   return weather.length > 0 ? (
     <div className="weather">
       <div className="temprature-now">
@@ -38,8 +34,6 @@ export default Weather;
 
 function Hour(props) {
   const hourWeather = props.hourWeather;
-
-  console.log(hourWeather);
 
   return <div>{hourWeather.data.instant.details.air_temperature}</div>;
 }
